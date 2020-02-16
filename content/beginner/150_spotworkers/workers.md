@@ -9,7 +9,7 @@ We have our EKS Cluster and worker nodes already, but we need some Spot Instance
 But first, we will add a new label to the OnDemand worker nodes
 
 ```bash
-kubectl label nodes --all 'lifecycle=OnDemand'
+kubectl label nodes --all lifecycle=OnDemand
 ```
 
 #### Create Spot worker nodes
